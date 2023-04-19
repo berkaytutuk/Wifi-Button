@@ -1,14 +1,12 @@
-/*
- Welcome to GND_TO_VCC!! 
-  
-*/
- 
+
 #include <ESP8266WiFi.h>
 #include <espnow.h>
  
 // REPLACE WITH RECEIVER MAC Address
-uint8_t broadcastAddress[] = {0x60, 0x01, 0x94, 0x3C, 0x2D, 0x7E};  // bir boşluk bırakılarak yazılmalıdır.
- 
+uint8_t broadcastAddress[] = {0x60, 0x01, 0x94, 0x3C, 0x2D, 0x7E}; //the mac address of the slave device .should be written with a space in between. // bir boşluk bırakılarak yazılmalıdır.
+
+
+
 // Structure example to send data
 // Must match the receiver structure
 typedef struct struct_message {
